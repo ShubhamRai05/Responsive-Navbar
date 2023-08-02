@@ -91,6 +91,19 @@ a
 }
 
 
+/* APPLYING MEDIA QUERIES */
+/* 980px */
+@media(max-width:980px){
+    .mobile-nav-btn
+    {
+        display: block;
+
+    }
+    nav
+    {
+        display: none;
+    }
+}
 
 
 
