@@ -7,6 +7,8 @@ html {
   font-size: 62.5%;
   /* by doing this now 1 rem = 10px else by default its 16px so it is tough for calculations */
 }
+
+/* ============HEADER SECTION============== */
 header {
   height: 10rem;
   display: flex;
@@ -44,6 +46,8 @@ header .logo {
   color: #365fc7;
 }
 
+
+/* ========MAIN SECTION======= */
 main
 {
   height: 100vh;
@@ -99,7 +103,7 @@ a
   display: none;
 }
 
-/* APPLYING MEDIA QUERIES */
+/* ================APPLYING MEDIA QUERIES ==================*/
 /* 980px */
 @media (max-width: 980px) {
   .mobile-nav-btn {
