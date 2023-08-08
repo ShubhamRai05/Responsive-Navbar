@@ -1,124 +1,81 @@
-* {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
   margin: 0;
   padding: 0;
-}
-html {
-  font-size: 62.5%;
-  /* by doing this now 1 rem = 10px else by default its 16px so it is tough for calculations */
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  
 }
 
-/* ============HEADER SECTION============== */
-header {
-  height: 10rem;
+body
+{
+  background-color: #e3e9f7;
+}
+
+header
+{
+  width: 80%;
+  height: 5rem;
+  background-color: #fefefe;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  background-color: #e7f5ff;
-}
-header .logo {
-  font-size: 3rem;
-  font-weight: 900;
-  font-family: sans-serif;
-  padding: 0 2rem;
-}
+  padding: 0 40px;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
 
-.nav-list {
-  display: flex;
-  gap: 4.8rem;
-  list-style: none;
-  padding: 0 2rem;
 }
-
-.nav-link:link,
-.nav-link:visited {
-  display: inline-block;
-  text-transform: uppercase;
+.logo
+{
+  width: 80px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.nav-list ul li , a
+{
+  list-style:none;
   text-decoration: none;
-  font-size: 2rem;
-  color: #212529;
-  transition: all ease-in 0.3s;
+  
 }
-
-.nav-link:active,
-.nav-link:hover {
-  color: #365fc7;
-}
-
-
-/* ========MAIN SECTION======= */
-main
+nav .logo
 {
-  height: 100vh;
-  background-color: #365fc7;
+  display: none;
+}
+nav ul
+{
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.hero
+
+nav ul li a
 {
-  font-size: 10rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  color: #212526;
+  display: block;
+  margin: 0 2px;
+  padding: 8px 18px;
+  font-weight: 600;
+  transition: 0.2s;
+  border-radius: 30px;
 }
-/* 
-.navbar ul
+
+nav ul li  a:hover
 {
-    display: flex;
-    font-size:2rem;
+  background-color: #f6f4ff;
 }
 
- nav ul li 
-{
-    display: flex;
-    text-decoration: none;
-    padding: 0 4rem;
-    
 
-}
-a
-{
-    text-decoration: none;
-} */
 
-/*
-.nav-list
-{
-    display: flex;
-} */
 
-.mobile-nav-btn {
-  display: none;
-  background: transparent;
-  cursor: pointer;
-}
 
-.mobile-nav-icon {
-  width: 5rem;
-  height: 4rem;
-  color: #212529;
-}
 
-.mobile-nav-icon[name='close-outline'] {
-  display: none;
-}
 
-/* ================APPLYING MEDIA QUERIES ==================*/
-/* 980px */
-@media (max-width: 980px) {
-  .mobile-nav-btn {
-    display: block;
-    z-index: 1000;
 
-    border: 3px solid #212529;
-    color: #212529;
-  }
-  .navbar {
-    display: none;
-  }
-  /* .logo
-    {
-           width: 40%;
-    } */
-}
+
+
+
+
+
+
+
+
+
