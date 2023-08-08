@@ -1,12 +1,10 @@
-const title = document.querySelector(".title")
+const menu = document.getElementById("menu")
+const nav = document.getElementById("nav")
+console.log(nav , menu);
 
-setInterval(() => {
-        let r = Math.floor(Math.random() * 255)
-        let g = Math.floor(Math.random() * 255)
-        let b = Math.floor(Math.random() * 255)
-        let rgb = `rgb(${r},${g},${b})`
-        console.log(rgb);
-        title.style.color = rgb
+function onCLickMenu(){
+ menu.classList.toggle("icon")
+ nav.classList.toggle("change")
 
-   
-}, 1000);
+}
+menu.addEventListener("click" , onCLickMenu)
